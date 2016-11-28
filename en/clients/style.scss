@@ -1,0 +1,112 @@
+@import '../styles/reset/reset';
+@import '../styles/fonts/fonts';
+@import '../styles/fonts/body-font';
+@import '../styles/Body_Width/body-width';
+@import '../styles/variables/variables';
+@import '../styles/Header_Dark/style';
+@import '../styles/Scroll_Container/scroll_container';
+
+//Global-styles --->
+
+body,
+main,
+.billet-block {
+  background: $global-dark-theme-color;
+}
+
+//<--- Global-styles
+
+//Contacts-block --->
+
+.clients-block {
+  display: flex;
+  background: $global-dark-theme-color;
+  align-items: center;
+  justify-content: center;
+  height: 140px;
+  border-top: $dark-theme-border;
+}
+
+.clients-block__h1-text {
+  font-size: 40px;
+  color: $global-light-theme-color;
+  font-weight: $global-font-weight;
+}
+
+//<--- Contacts-block
+
+.international-block,
+.finance-block,
+.clothes-block,
+.building-block,
+.development-block,
+.furniture-block,
+.auto-block,
+.techno-block,
+.entertaiment-block,
+.beauty-block,
+.food-block,
+.tourism-block,
+.b2b-block {
+  display: flex;
+  background: $global-light-theme-color;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 70px 40px 0 40px;
+}
+
+.international-block > h2,
+.finance-block > h2,
+.clothes-block > h2,
+.building-block > h2,
+.development-block > h2,
+.furniture-block > h2,
+.auto-block > h2,
+.techno-block > h2,
+.entertaiment-block > h2,
+.beauty-block > h2,
+.food-block > h2,
+.tourism-block > h2,
+.b2b-block > h2 {
+  font-size: 30px;
+  font-weight: $global-font-weight;
+  color: $global-light-theme-text-color;
+  margin-bottom: 50px;
+}
+
+.wrapper-for-logos {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+.wrapper-for-logos > div {
+  display: inline-flex;
+  margin: 10px;
+  border-radius: 4px;
+  border: 1px solid #d9dadc;
+  width: 180px;
+  height: 110px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+//.wrapper-for-logos span {
+//  font-size: 12px;
+//  font-weight: 400;
+//  color: $global-light-theme-text-color;
+//  text-align: center;
+//}
+
+.wrapper-for-logos img {
+  width: 100px;
+  max-height: 55px;
+}
+
+@import '../styles/Footer_Form/footer_form';
+@import '../styles/media/media';

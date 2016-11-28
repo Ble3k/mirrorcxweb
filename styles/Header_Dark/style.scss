@@ -1,0 +1,120 @@
+header {
+  background: rgba(46, 62, 78, .5);
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 99 !important;
+}
+
+.header {
+  display: flex;
+  max-width: 1440px;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  transition: height .5s;
+}
+
+.header__svg {
+   display: none;
+ }
+
+.header-low {
+  height: 60px;
+  transition: height .5s;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link_active {
+  opacity: .5;
+}
+
+.mirror-logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.mirror-logo__lang-switch {
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 25px;
+  width: 60px;
+  padding: 0px 5px;
+}
+
+.mirror-logo__lang-switch_border {
+  height: 15px;
+  background: $global-light-theme-color;
+  width: 1px;
+  position: relative;
+  opacity: .5;
+}
+
+.mirror-logo__lang-switch_rus,
+.mirror-logo__lang-switch_eng {
+  font-size: $font-size-bigger;
+  color: $global-light-theme-color;
+  position: relative; 
+  bottom: 2px;
+  font-weight: $global-font-weight;
+}
+
+.active-lang {
+  opacity: .7;
+}
+
+.top-menu {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 540px;
+  position: relative;
+  left: 54px;
+}
+
+.top-menu__link {
+  font-size: $font-size-big;
+  color: $global-light-theme-color;
+}
+
+.top-menu__element {
+  display: flex;
+}
+
+.login-form {
+  display: inline-flex;
+  align-items: center;
+}
+
+.login-form__enter-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 84px;
+  height: 40px;
+  border-radius: 70px;
+  border: solid 2px $global-light-theme-color;
+  font-size: 12px;
+  color: $global-light-theme-color;
+  margin-right: 15px;
+}
+
+.login-form__registration-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 202px;
+  height: 40px;
+  border-radius: 70px;
+  background-color: $global-light-theme-color;
+  font-size: $font-lower-text-size;
+  color: $global-dark-theme-color;
+}
