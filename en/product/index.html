@@ -7,157 +7,102 @@
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="../images/favicon.png" type="image/png">
   <script type="text/javascript" src='../../apps/jquery/jquery.js'></script>
-  <script type="text/javascript" src='../../apps/scroll-slow/scroll.js'></script>
-  <script type="text/javascript" src='../../apps/scroll-menu/classie.js'></script>
-  <script type="text/javascript" src='../../apps/scroll-menu/cbpAnimatedHeader.js'></script>
   <title>Mirror CX - Customer Experience solution</title>
 </head>
 <body>
-  <div class='scroll-container'>
-    <div class="popUp-border"></div>
-    <header>
-      <div class="header__popUp">
-        <a href="../product/index.html" class="popUp__main-menu-link">SOLUTION</a>
-        <a href="../service/mystery/index.html" class="popUp__main-menu-link">SERVICES</a>
-        <a href="../clients/index.html" class="popUp__main-menu-link">CLIENTS</a>
-        <a href="../franchising/index.html" class="popUp__main-menu-link">FRANCHISING</a>
-        <a href="../contacts/index.html" class="popUp__main-menu-link">CONTACTS</a>
-        <div class="popUp__btns-block">
-          <a href="http://online.mirror-russia.ru/login/?next=/" class="popUp__enter-link">LOGIN</a>
-          <a href="http://online.mirror-russia.ru/purchasers/registration/" class="popUp__mystery-link">BECOME A SHOPPER</a>
-          <a href="../index.html#form" class="popUp__demo-link">DEMO</a>
-        </div>
+  <div id="header-container"></div>
+  <script type="text/javascript" src="/apps/ajax/links/enMirrorHeader.js"></script>
+  <div id="modal-container"></div>
+  <script type="text/javascript" src="/apps/ajax/links/enMirrorModal.js"></script>
+  <main>
+    <div class='billet-block'></div>
+    <div class="title-block">
+      <div class="title-block__align-container">
+        <h1 class="title-block__h1-text">3D-analytics for your stores, restaurants, salons and offices</h1>
+        <p class="title-block__p-text">To make your retail business truly successful, you need to talk to 3 people: a customer, a seller and a mystery shopper.</p>
       </div>
-      <div class='header'>
-        <div class='mirror-logo'>
-          <a class="header__mirror-logo__img" href="../index.html">
-            <img src="../images/mirror_CX-logo-light.png" alt="Mirror_CX">
-          </a>
-          <div class='mirror-logo__lang-switch'>
-            <a href='../../product/index.html' class='mirror-logo__lang-switch_rus'>ru</a>
-            <div class='mirror-logo__lang-switch_border'></div>
-            <a href='./index.html' class='mirror-logo__lang-switch_eng active-lang'>en</a>
-          </div>
-        </div>
-        <div class="header__svg">
-          <svg class="menu-open" viewBox="0 0 24 24">
-            <g>
-              <path d="M24,3c0-0.6-0.4-1-1-1H1C0.4,2,0,2.4,0,3v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V3z"></path>
-              <path d="M24,11c0-0.6-0.4-1-1-1H1c-0.6,0-1,0.4-1,1v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V11z"></path>
-              <path d="M24,19c0-0.6-0.4-1-1-1H1c-0.6,0-1,0.4-1,1v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V19z"></path>
-            </g>
-          </svg>
-          <svg class="menu-close" viewBox="0 0 47.971 47.971">
-            <g>
-              <path d="M28.228,23.986L47.092,5.122c1.172-1.171,1.172-3.071,0-4.242c-1.172-1.172-3.07-1.172-4.242,0L23.986,19.744L5.121,0.88   c-1.172-1.172-3.07-1.172-4.242,0c-1.172,1.171-1.172,3.071,0,4.242l18.865,18.864L0.879,42.85c-1.172,1.171-1.172,3.071,0,4.242   C1.465,47.677,2.233,47.97,3,47.97s1.535-0.293,2.121-0.879l18.865-18.864L42.85,47.091c0.586,0.586,1.354,0.879,2.121,0.879   s1.535-0.293,2.121-0.879c1.172-1.171,1.172-3.071,0-4.242L28.228,23.986z"></path>
-            </g>
-          </svg>
-        </div>
-        <ul class='top-menu'>
-          <li class='top-menu__element'>
-            <a href="../product/index.html" class='top-menu__link link_active'>SOLUTION</a>
-          </li>
-          <li class='top-menu__element'>
-            <a href="../service/mystery/index.html" class='top-menu__link'>SERVICES</a>
-          </li>
-          <li class='top-menu__element'>
-            <a href="../clients/index.html" class='top-menu__link'>CLIENTS</a>
-          </li>
-          <li class='top-menu__element'>
-            <a href="../franchising/index.html" class='top-menu__link'>FRANCHISING</a>
-          </li>
-          <li class='top-menu__element'>
-            <a href="../contacts/index.html" class='top-menu__link'>CONTACTS</a>
-          </li>
-        </ul>
-        <div class='login-form'>
-          <a href='http://online.mirror-russia.ru/login/?next=/' target='_blank' class='login-form__enter-button'>LOGIN</a>
-          <a href='http://online.mirror-russia.ru/purchasers/registration/' target='_blank' class='login-form__registration-button'>BECOME A SHOPPER</a>
-        </div>
-      </div>
-    </header>
-    <main>
-      <div class='billet-block'></div>
-      <div class='product-header-block'>
-        <h1 class='product-header-block__h1-text'>3D-analytics for your stores, restaurants, salons and offices</h1>
-        <h3 class='product-header-block__h3-text'>To make your retail business truly successful, you need to talk to 3 people: a customer, a seller and a mystery shopper.</h3>
-      </div>
-      <div class='big-mac-block'>
-        <h2 class='big-mac-block__h2-text'>What lies behind the scores and answers?</h2>
-        <p class='big-mac-block__p-text'>Track Customer Experience Index in real time. Choose convenient reports forms: in a map, in charts, in tables. Get information about the level of implementation of corporate standards, customer and staff satisfaction at each point of sale or regional unit. Find relationships, analyze, and make management decisions based on the data you can trust. What do your customers really need and what they actually get in your outlets? Mirror CX will show you!</p>
-        <img src="../images/big-mac.png" alt="big-mac">
-      </div>
-      <div class='mystery-vendor-block'>
-        <div class='mystery-vendor-block__text-wrapper'>
-          <h2 class='mystery-vendor-block__h2-text'>Mystery shopping</h2>
-          <p class='mystery-vendor-block__p-text'>Manage mystery shopping projects using the database of 95,000 agents throughout the CIS and Eastern Europe. Or delegate management to your contractor and grant him access to Mirror CX. Determine the level of implementation of standards for each of your outlets, form a ranking of managers and sellers, analyze individual reports of mystery shoppers, listen records of audits, see photo reports and videos online.</p>
-        </div>
-        <img src="../images/mystery-mac.png" alt="litle-mac">
-      </div>
-      <div class='interview-block'>
-        <img src="../images/interview-mac.png" alt="litle-mac">
-        <div class='interview-block__text-wrapper'>
-          <h2 class='interview-block__h2-text'>Customer surveys</h2>
-          <p class='interview-block__p-text'>Organize automatic surveys of costumers as for satisfaction or create your own surveys. Watch for NPS, CSI and define the main problem areas in the retail network by tips of your customers.</p>
-        </div>
-      </div>
-      <div class='staff-rating-block'>
-        <div class='staff-rating-block__text-wrapper'>
-          <h2 class='staff-rating-block__h2-text'>Assessment of employees</h2>
-          <p class='staff-rating-block__p-text'>Carry out regular assessments of knowledge of employees using a survey. Analyze internal NPS and line personnel satisfaction level. Involve people in work to improve the standards and the basic indicators of the company. Find the correlation between employee satisfaction, sales and estimates of mystery shoppers.</p>
-        </div>
-        <img src="../images/staff-mac.png" alt="litle-mac">
-      </div>
-      <div class='opportunities_block'>
-        <h2 class='opportunities_block__h2-text'>Opportunities</h2>
-        <div class='opportunities_block__list-wrapper'>
-          <div class='opportunities_block__opportunity opportunities_block__p-text_margin-right'>
-            <img src="../images/rent.png" alt="rent">
-            <h3 class='opportunities_block__h3-text'>SaaS</h3>
-            <p class='opportunities_block__p-text'>If you want to rent the software and build customer experience management department or quality control department, you should look <a href="../service/rent/index.html" class='opportunities_block__moreinf-link'>here</a>. We can also help you to build business processes and provide the necessary documentation.</p>
-          </div>
-          <div class='opportunities_block__opportunity opportunities_block__p-text_margin-right'>
-            <img src="../images/outsource.png" alt="outsource">
-            <h3 class='opportunities_block__h3-text'>Outsourcing</h3>
-            <p class='opportunities_block__p-text opportunities_block__p-text_width'>We provide services in the field of research by Mystery shopping method, surveys, employee satisfaction assessment. Our clients include 30 of 100 largest retail networks in Russia. Details are <a href="../service/mystery/index.html" class='opportunities_block__moreinf-link'>here</a>.</p>
-          </div>
-          <div class='opportunities_block__opportunity'>
-            <img src="../images/franchase.png" alt="franchase">
-            <h3 class='opportunities_block__h3-text'>Franchising</h3>
-            <p class='opportunities_block__p-text'>For regional agencies, we offer a full-fledged franchise with an regional exclusive. You will be able to significantly increase the share in your regional market, to get modern software, to build a stable business. See <a href="../franchising/index.html" class='opportunities_block__moreinf-link'>this</a> section of the web-site for details.</p>
-          </div>
-        </div>
-        <a href="#form" class='opportunities_block__demo-link'>DEMO</a>
-      </div>
-      <div class='integration-block'>
-        <p class='integration-block__p-text'>Mirror CX is our own development, so the opportunities to adapt the product to suit your needs are almost limitless. We have experience of integration with the most popular ERP-systems for easy use of research data in your general analytics.</p>
-        <div class='integration-block__logo-wrapper'>
-          <img src="../images/sap-logo.png" alt="sap-logo">
-          <img src="../images/trood-logo.png" alt="trood-logo">
-          <img src="../images/1c-logo.png" alt="1c-logo" class='integration-block__1c-logo'>
-          <img src="../images/oracle-logo.png" alt="oracle-logo">
-          <img src="../images/ms-logo.png" alt="ms-logo">
-        </div>
-      </div>
-      <a id='form'></a>
-    </main>
-  </div>  
-  <form class='footer-form-block' method="post" action="../../apps/mailer/send.php">
-   <div class='footer-form-block__text-wrapper'>
-      <img src="../images/form-arrow.png" alt="form-arrow" class='footer-form-block__form-arrow'>
-     <h2 class='footer-form-block__h2-text'>Hello!</h2>
-     <p class='footer-form-block__p-text'>Tell us about your needs and we will answer immediately</p>
-   </div>
-    <div class='footer-form-block__input-wrapper'>
-      <div class='footer-form-block__input-text-wrapper'>
-        <input required name='name' type="text" placeholder='Name' class='footer-form-block__text-input'>
-        <input required name='company-name' type="text" placeholder='Company' class='footer-form-block__text-input footer-form-block__text-input_margin-right'>
-        <input required name='phone' type="tel" placeholder='Phone' class='footer-form-block__text-input footer-form-block__text-input_margin-bottom'>
-        <input required name='email' type="email" placeholder='E-mail' class='footer-form-block__text-input footer-form-block__text-input_margin-bottom footer-form-block__text-input_margin-right'>
-      </div>
-      <textarea required name="comments" id="comments" cols="30" rows="10" placeholder='Comments' class='footer-form-block__comment-input'></textarea>
-      <input type='submit' value='CONTACT ME' class='footer-form-block__submit-button'>
     </div>
-  </form>
+    <div class="individual-block">
+      <img src="/en/images/Group 2.png" alt="mocup-devices">
+      <div class="individual-block__description">
+        <h3 class="individual-block__h3-text">
+          What lies behind the scores and answers?
+        </h3>
+        <p class="individual-block__p-text">
+          Track Customer Experience Index in real time. Choose convenient reports forms: in a map, in charts, in tables. Get information about the level of implementation of corporate standards, customer and staff satisfaction at each point of sale or regional unit. Find relationships, analyze, and make management decisions based on the data you can trust.
+          <br><br>
+          What do your customers really need and what they actually get in your outlets? Mirror CX will show you!
+        </p>
+      </div>
+    </div>
+    <div class="service-adv">
+      <div class="service-adv__align-container">
+        <div class="service-adv__text-container">
+          <h2 class="service-adv__h2-text">Mystery shopping</h2>
+          <p class="service-adv__p-text">Manage mystery shopping projects using the database of 95,000 agents throughout the CIS and Eastern Europe. Or delegate management to your contractor and grant him access to Mirror CX. Determine the level of implementation of standards for each of your outlets, form a ranking of managers and sellers, analyze individual reports of mystery shoppers, listen records of audits, see photo reports and videos online.</p>
+        </div>
+        <img src="/en/images/Group 9.png" alt="service-adv">
+      </div>
+    </div>
+    <div class="service-adv">
+      <div class="service-adv__align-container">
+        <img src="/en/images/Group 5.png" alt="service-adv">
+        <div class="service-adv__text-container">
+          <h2 class="service-adv__h2-text">Customer surveys</h2>
+          <p class="service-adv__p-text">Organize automatic surveys of costumers as for satisfaction or create your own surveys. Watch for NPS, CSI and define the main problem areas in the retail network by tips of your customers.</p>
+        </div>
+      </div>
+    </div>
+    <div class="service-adv">
+      <div class="service-adv__align-container">
+        <div class="service-adv__text-container">
+          <h2 class="service-adv__h2-text">Assessment of employees</h2>
+          <p class="service-adv__p-text">Carry out regular assessments of knowledge of employees using a survey. Analyze internal NPS and line personnel satisfaction level. Involve people in work to improve the standards and the basic indicators of the company. Find the correlation between employee satisfaction, sales and estimates of mystery shoppers.</p>
+        </div>
+        <img src="/en/images/Group 8.png" alt="service-adv">
+      </div>
+    </div>
+    <div class="opp-block">
+      <h2 class="opp-block__h2-text">Opportunities</h2>
+      <div class="opp-block__align-container">
+        <div class="opp-block__list">
+          <img src="/en/images/saas.png" alt="opp-img">
+          <h3 class="opp-block__list_title">SaaS</h3>
+          <p class="opp-block__p-text">If you want to rent the software and build customer experience management department or quality control department, you should look
+            <a class="opp-block__link" href="/en/service/rent/index.html">here</a>. We can also help you to build business processes and provide the necessary documentation.</p>
+        </div>
+        <div class="opp-block__list">
+          <img src="/en/images/outsorcing.png" alt="opp-img">
+          <h3 class="opp-block__list_title">Outsourcing</h3>
+          <p class="opp-block__p-text">We provide services in the field of research by Mystery shopping method, surveys, employee satisfaction assessment. Our clients include 30 of 100 largest retail networks in Russia. Details are
+            <a class="opp-block__link" href="/en/service/mystery/index.html">here</a>.</p>
+        </div>
+        <div class="opp-block__list">
+          <img src="/en/images/franch.png" alt="opp-img">
+          <h3 class="opp-block__list_title">Franchising</h3>
+          <p class="opp-block__p-text">For regional agencies, we offer a full-fledged franchise with an regional exclusive. You will be able to significantly increase the share in your regional market, to get modern software, to build a stable business. See
+            <a class="opp-block__link" href="/en/franchising/index.html">this</a> section of the web-site for details.</p>
+        </div>
+      </div>
+      <span class="opp-block__btn d-btn">DEMO</span>
+    </div>
+    <div class="integration">
+      <div class="integration__text-container">
+        <h2 class="integration__h2-text">Integration</h2>
+        <p class="integration__p-text">Mirror CX is our own development, so the opportunities to adapt the product to suit your needs are almost limitless. We have experience of integration with the most popular ERP-systems for easy use of research data in your general analytics.</p>
+      </div>
+      <div class="integration__logo-container">
+        <img src="/en/images/sap-logo.png" alt="sap">
+        <img src="/en/images/1c-logo.png" alt="1c">
+        <img src="/en/images/trood-logo.png" alt="trood">
+        <img src="/en/images/oracle-logo.png" alt="oracle">
+        <img src="/en/images/ms-logo.png" alt="ms">
+      </div>
+    </div>
+    <div id="form-container"></div>
+    <script type="text/javascript" src="/apps/ajax/links/enMirrorForm.js"></script>
+  </main>
+  <div id="footer-container"></div>
+  <script type="text/javascript" src="/apps/ajax/links/enMirrorFooter.js"></script>
 </body>
 </html>

@@ -1,0 +1,37 @@
+//Bottom-menu --->
+
+.bottom-menu {
+  background: $global-dark-theme-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  height: 69px;
+  border-bottom: $dark-theme-border;
+  border-top: $dark-theme-border;
+  box-sizing: border-box;
+}
+
+.bottom-menu__flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 510px;
+  height: 100%;
+}
+
+.bottom-menu__link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 20px;
+  color: #fff;
+  opacity: .6;
+  height: 100%;
+}
+
+.bottom-menu__active-link {
+  opacity: 1;
+  box-shadow: 0 2px 0 0 #fff;
+}
+
+//<--- Bottom-menu

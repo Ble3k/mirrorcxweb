@@ -7,75 +7,12 @@
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="../images/favicon.png" type="image/png">
   <script type="text/javascript" src='../apps/jquery/jquery.js'></script>
-  <script type="text/javascript" src='../apps/scroll-slow/scroll.js'></script>
-  <script type="text/javascript" src='../apps/scroll-menu/classie.js'></script>
-  <script type="text/javascript" src='../apps/scroll-menu/cbpAnimatedHeader.js'></script>
   <title>Mirror CX -  Управление потребительским опытом | Тайный покупатель, опросы, оценка сотрудников</title>
 </head>
 <body>
   <div class='scroll-container'>
-    <div class="popUp-border"></div>
-    <header>
-      <div class="header__popUp">
-        <a href="../product/index.html" class="popUp__main-menu-link">Продукт</a>
-        <a href="../service/mystery/index.html" class="popUp__main-menu-link">Услуги</a>
-        <a href="../clients/index.html" class="popUp__main-menu-link">Клиенты</a>
-        <a href="../press/index.html" class="popUp__main-menu-link">Пресс-центр</a>
-        <a href="../contacts/index.html" class="popUp__main-menu-link">Контакты</a>
-        <div class="popUp__btns-block">
-          <a href="http://online.mirror-russia.ru/login/?next=/" class="popUp__enter-link">Войти</a>
-          <a href="http://online.mirror-russia.ru/purchasers/registration/" class="popUp__mystery-link">СТАТЬ ТАЙНЫМ ПОКУПАТЕЛЕМ</a>
-          <a href="../index.html#form" class="popUp__demo-link">ПОСМОТРЕТЬ ДЕМО</a>
-        </div>
-      </div>
-      <div class='header'>
-        <div class='mirror-logo'>
-          <a class="header__mirror-logo__img" href="../index.html">
-            <img src="../images/mirror_CX-logo-light.png" alt="Mirror_CX">
-          </a>
-          <div class='mirror-logo__lang-switch'>
-            <a href='./index.html' class='mirror-logo__lang-switch_rus active-lang'>ru</a>
-            <div class='mirror-logo__lang-switch_border'></div>
-            <a href='../en/product/index.html' class='mirror-logo__lang-switch_eng'>en</a>
-          </div>
-        </div>
-        <div class="header__svg">
-          <svg class="menu-open" viewBox="0 0 24 24">
-            <g>
-              <path d="M24,3c0-0.6-0.4-1-1-1H1C0.4,2,0,2.4,0,3v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V3z"></path>
-              <path d="M24,11c0-0.6-0.4-1-1-1H1c-0.6,0-1,0.4-1,1v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V11z"></path>
-              <path d="M24,19c0-0.6-0.4-1-1-1H1c-0.6,0-1,0.4-1,1v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V19z"></path>
-            </g>
-          </svg>
-          <svg class="menu-close" viewBox="0 0 47.971 47.971">
-            <g>
-              <path d="M28.228,23.986L47.092,5.122c1.172-1.171,1.172-3.071,0-4.242c-1.172-1.172-3.07-1.172-4.242,0L23.986,19.744L5.121,0.88   c-1.172-1.172-3.07-1.172-4.242,0c-1.172,1.171-1.172,3.071,0,4.242l18.865,18.864L0.879,42.85c-1.172,1.171-1.172,3.071,0,4.242   C1.465,47.677,2.233,47.97,3,47.97s1.535-0.293,2.121-0.879l18.865-18.864L42.85,47.091c0.586,0.586,1.354,0.879,2.121,0.879   s1.535-0.293,2.121-0.879c1.172-1.171,1.172-3.071,0-4.242L28.228,23.986z"></path>
-            </g>
-          </svg>
-        </div>
-        <ul class='top-menu'>
-          <li class='top-menu__element'>
-            <a href="../product/index.html" class='top-menu__link link_active'>ПРОДУКТ</a>
-          </li>
-          <li class='top-menu__element'>
-            <a href="../service/mystery/index.html" class='top-menu__link'>УСЛУГИ</a>
-          </li>
-          <li class='top-menu__element'>
-            <a href="../clients/index.html" class='top-menu__link'>КЛИЕНТЫ</a>
-          </li>
-          <li class='top-menu__element'>
-            <a href="../press/index.html" class='top-menu__link'>ПРЕСС-ЦЕНТР</a>
-          </li>
-          <li class='top-menu__element'>
-            <a href="../contacts/index.html" class='top-menu__link'>КОНТАКТЫ</a>
-          </li>
-        </ul>
-        <div class='login-form'>
-          <a href='http://online.mirror-russia.ru/login/?next=/' target='_blank' class='login-form__enter-button'>ВОЙТИ</a>
-          <a href='http://online.mirror-russia.ru/purchasers/registration/' target='_blank' class='login-form__registration-button'>СТАТЬ ТАЙНЫМ ПОКУПАТЕЛЕМ</a>
-        </div>
-      </div>
-    </header>
+    <div id="header-container"></div>
+    <script type="text/javascript" src="../apps/ajax/links/mirrorHeader.js"></script>
     <main>
       <div class='billet-block'></div>
       <div class='product-header-block'>
@@ -132,7 +69,7 @@ Mirror CX позволяет организовать проверки мето�
             <a href="../franchising/index.html" class='opportunities_block__moreinf-link'>Подробнее</a>
           </div>
         </div>
-        <a href="#form" class='opportunities_block__demo-link'>ПОСМОТРЕТЬ ДЕМО</a>
+        <span class='opportunities_block__demo-link'>ПОСМОТРЕТЬ ДЕМО</span>
       </div>
       <div class='integration-block'>
         <p class='integration-block__p-text'>Mirror CX – наша собственная разработка, поэтому возможности адаптации продукта под ваши потребности почти безграничны. У нас есть опыт интеграции с наиболее популярными учетными и ERP системами для легкого использования данных исследований в вашей общей аналитике</p>
@@ -146,29 +83,8 @@ Mirror CX позволяет организовать проверки мето�
       </div>
       <a id='form'></a>
     </main>
-  </div>  
-  <form class='footer-form-block' method="post" action="../apps/mailer/send.php">
-   <div class='footer-form-block__text-wrapper'>
-      <img src="../images/form-arrow.png" alt="form-arrow" class='footer-form-block__form-arrow'>
-     <h2 class='footer-form-block__h2-text'>Познакомимся?</h2>
-     <p class='footer-form-block__p-text'>Оставьте свои данные  и мы свяжемся с вами в течение этого рабочего дня</p>
-   </div>
-    <div class='footer-form-block__input-wrapper'>
-      <div class='footer-form-block__input-text-wrapper'>
-        <input required name='name' type="text" placeholder='Имя' class='footer-form-block__text-input'>
-        <input required name='company-name' type="text" placeholder='Название компании' class='footer-form-block__text-input footer-form-block__text-input_margin-right'>
-        <input required name='phone' type="tel" placeholder='Телефон' class='footer-form-block__text-input footer-form-block__text-input_margin-bottom'>
-        <input required name='email' type="email" placeholder='E-mail' class='footer-form-block__text-input footer-form-block__text-input_margin-bottom footer-form-block__text-input_margin-right'>
-      </div>
-      <textarea required name="comments" id="comments" cols="30" rows="10" placeholder='Комментарий' class='footer-form-block__comment-input'></textarea>
-      <div class="footer-form-block__contact-us-wrapper">
-        <input type='submit' value='СВЯЗАТЬСЯ СО МНОЙ' class='footer-form-block__submit-button'>
-        <div class="footer-form-block__info-wrapper">
-          <span class="footer-form-block__phone">+7 (499) 501-1194</span>
-          <span class="footer-form-block__mail">info@mirrorcx.com</span>
-        </div>
-      </div>
-    </div>
-  </form>
+  </div>
+  <div id="form-container"></div>
+  <script type="text/javascript" src="../apps/ajax/links/mirrorForm.js"></script>
 </body>
 </html>

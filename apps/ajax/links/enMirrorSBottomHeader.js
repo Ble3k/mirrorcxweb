@@ -1,0 +1,1 @@
+$('#servBotHeader-container').load('/components/enMirrorSBottomHeader/index.html')

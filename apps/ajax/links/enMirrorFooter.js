@@ -1,0 +1,1 @@
+$('#footer-container').load('/components/enMirrorFooter/index.html')

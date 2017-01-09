@@ -1,0 +1,125 @@
+header {
+  background: rgba(255, 255, 255, .5);
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 999999 !important;
+}
+
+
+
+.header {
+  display: flex;
+  max-width: 1440px;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 50px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  transition: height .5s;
+}
+
+.header__svg {
+  display: none;
+}
+
+
+.header-low {
+  height: 60px;
+  padding: 0px 50px;
+  transition: height .5s;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mirror-logo {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+
+.header__mirror-logo__img {
+  width: 146px;
+  height: 30px;
+  background: url("../../images/mirror_CX-logo-blue.png") no-repeat center center;
+}
+
+.mirror-logo__lang-switch {
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 25px;
+  width: 50px;
+  padding: 0px 5px;
+}
+
+.mirror-logo__lang-switch_rus,
+.mirror-logo__lang-switch_eng {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 29px;
+  height: 22px;
+  font-size: 12px;
+  color: #787878;
+  position: relative; 
+  bottom: 2px;
+}
+
+.active-lang {
+  border-radius: 2px;
+  background-color: #d8d8d8;
+}
+
+.top-menu {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 540px;
+  position: relative;
+  left: 54px;
+}
+
+.top-menu__element {
+  display: flex;
+}
+
+.top-menu__link {
+  font-size: $font-size-bigger;
+  color: $global-light-theme-text-color;
+}
+
+.login-form {
+  display: inline-flex;
+  align-items: center;
+}
+
+.login-form__enter-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 40px;
+  border-radius: 3px;
+  border: solid 2px $global-light-theme-text-color;;
+  font-size: 12px;
+  color: $global-light-theme-text-color;;
+  margin-right: 15px;
+}
+
+.login-form__registration-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 152px;
+  height: 40px;
+  border-radius: 3px;
+  background-color: $global-dark-theme-color;
+  font-size: 12px;
+  color: $global-light-theme-color;
+}

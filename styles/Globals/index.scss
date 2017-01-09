@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Lato-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/styles/Fonts/Lato-Regular/Lato-Regular.eot?#iefix") format("embedded-opentype"),
+  url("/styles/Fonts/Lato-Regular/Lato-Regular.woff") format("woff"),
+  url("/styles/Fonts/Lato-Regular/Lato-Regular.ttf") format("truetype")
+}
+
+body {
+  font-family: "Lato-Regular", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+}
+
+.billet-block {
+  height: 100px;
+}

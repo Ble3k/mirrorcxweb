@@ -1,0 +1,1 @@
+$('#header-container').load('/components/mirrorHeader/index.html')

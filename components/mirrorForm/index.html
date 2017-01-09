@@ -1,0 +1,30 @@
+<script src="/apps/reCaptcha/index.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=explicit&onload=onReCaptchaLoad"></script>
+<script type="text/javascript" src='../../apps/form-validation/index.js'></script>
+
+<form class='footer-form-block'>
+  <div class='footer-form-block__text-wrapper'>
+    <img src="../../images/form-arrow.png" alt="form-arrow" class='footer-form-block__form-arrow'>
+    <h2 class='footer-form-block__h2-text'>Познакомимся?</h2>
+    <p class='footer-form-block__p-text'>Оставьте свои данные  и мы свяжемся с вами в течение этого рабочего дня</p>
+  </div>
+  <div class='footer-form-block__input-wrapper'>
+    <span class="validate-text"></span>
+    <div class='footer-form-block__input-text-wrapper'>
+      <input required name='name' type="text" placeholder='Имя' class='footer-form-block__text-input input-name'>
+      <input required name='company-name' type="text" placeholder='Название компании' class='footer-form-block__text-input footer-form-block__text-input_margin-right input-company'>
+      <input required name='phone' type="tel" placeholder='Телефон' class='footer-form-block__text-input footer-form-block__text-input_margin-bottom input-phone'>
+      <input required name='email' type="email" placeholder='E-mail' class='footer-form-block__text-input footer-form-block__text-input_margin-bottom footer-form-block__text-input_margin-right input-mail'>
+    </div>
+    <textarea required name="comments" id="comments" cols="30" rows="10" placeholder='Комментарий' class='footer-form-block__comment-input input-comment'></textarea>
+    <div id="captcha-container" class="footer-form__captcha-container"></div>
+    <div class="footer-form-block__contact-us-wrapper">
+      <button class='footer-form-block__submit-button'>СВЯЗАТЬСЯ СО МНОЙ</button>
+      <div class="footer-form-block__info-wrapper">
+        <span class="footer-form-block__phone">+7 (499) 501-1194</span>
+        <span class="footer-form-block__mail">info@mirrorcx.com</span>
+      </div>
+    </div>
+  </div>
+  <div class="form-block_success">Спасибо! Ваше сообщение отправлено.</div>
+</form>

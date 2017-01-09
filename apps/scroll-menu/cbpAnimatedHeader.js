@@ -1,30 +1,23 @@
-/**
- * cbpAnimatedHeader.js v1.0.0
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2013, Codrops
- * http://www.codrops.com
- */
 $(document).ready(function() {
-		$('svg.menu-open').addClass('show-btn')
+	  var path = window.location.pathname.split('/')[1] === 'en' ? window.location.pathname.split('/')[2] : window.location.pathname.split('/')[1]
+    var enPath = window.location.pathname.split('/')[3]
 
-		function activatePopUp() {
-			$('div.header__popUp').toggleClass('header__popUp_show')
-			$('svg.menu-open').toggleClass('show-btn')
-			$('svg.menu-close').toggleClass('show-btn')
-		}
+    switch(path) {
+      case ('product'): $('a.products').addClass('link_active'); break
+      case ('service'): $('a.service').addClass('link_active'); break
+      case ('clients'): $('a.clients').addClass('link_active'); break
+      case ('press'): $('a.press').addClass('link_active'); break
+      case ('franchising'): $('a.franchising').addClass('link_active'); break
+      case ('contacts'): $('a.contacts').addClass('link_active'); break
+      default:
+    }
 
-		function closePopUp() {
-			$('div.header__popUp').removeClass('header__popUp_show')
-			$('svg.menu-open').toggleClass('show-btn')
-			$('svg.menu-close').toggleClass('show-btn')
-		}
-
-		$('div.header__svg').click(function () { activatePopUp() })
-		$('a.popUp__demo-link').click(function () { closePopUp() })
+    switch(enPath) {
+      case ('mystery'): $('a.mystery').addClass('bottom-menu__active-link'); break
+      case ('interviews'): $('a.interviews').addClass('bottom-menu__active-link'); break
+      case ('rent'): $('a.rent').addClass('bottom-menu__active-link'); break
+      default:
+    }
 
 var cbpAnimatedHeader = (function() {
 

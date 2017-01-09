@@ -1,9 +1,7 @@
-@import '../styles/reset/reset';
-@import '../styles/fonts/fonts';
-@import '../styles/fonts/body-font';
-@import '../styles/Body_Width/body-width';
-@import '../styles/variables/variables';
-@import '../styles/Header_Dark/style';
+@import '../styles/Reset/index';
+@import '../styles/Globals/index';
+@import '../styles/Variables/index';
+@import '../styles/Header_Dark_Style/index';
 @import '../styles/Scroll_Container/scroll_container';
 
 //Global-styles --->
@@ -238,6 +236,7 @@ main,
   font-size: $font-size-big;
   color: $global-light-theme-color;
   margin-top: 40px;
+  cursor: pointer;
 }
 
 //<--- Opportunities-block
@@ -282,5 +281,5 @@ main,
 
 //<---Integratiob-block
 
-@import '../styles/Footer_Form/footer_form';
-@import '../styles/media/media';
+@import '../styles/Form_Style/index';
+@import '../styles/Media/index';

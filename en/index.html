@@ -7,96 +7,29 @@
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="images/favicon.png" type="image/png">
   <script type="text/javascript" src='../apps/jquery/jquery.js'></script>
-  <script type="text/javascript" src='../apps/scroll-slow/scroll.js'></script>
-  <script type="text/javascript" src='../apps/scrollorama/scrollorama.js'></script>
-  <script type="text/javascript" src='../apps/scrollorama/jquery.superscrollorama.js'></script>
-  <script type="text/javascript" src='../apps/scrollorama/TweenMax.min.js'></script>
-  <script type="text/javascript" src='../apps/scroll-menu/classie.js'></script>
-  <script type="text/javascript" src='../apps/scroll-menu/cbpAnimatedHeader.js'></script>
 </head>
 <body>
-  <div class='scroll-container'>
-    <div class="popUp-border"></div>
-    <header class='cbp-af-header'>
-      <div class="header__popUp">
-        <a href="product/index.html" class="popUp__main-menu-link">SOLUTION</a>
-        <a href="service/mystery/index.html" class="popUp__main-menu-link">SERVICES</a>
-        <a href="clients/index.html" class="popUp__main-menu-link">CLIENTS</a>
-        <a href="franchising/index.html" class="popUp__main-menu-link">FRANCHISING</a>
-        <a href="contacts/index.html" class="popUp__main-menu-link">CONTACTS</a>
-        <div class="popUp__btns-block">
-          <a href="http://online.mirror-russia.ru/login/?next=/" class="popUp__enter-link">LOGIN</a>
-          <a href="http://online.mirror-russia.ru/purchasers/registration/" class="popUp__mystery-link">BECOME A SHOPPER</a>
-          <a href="index.html#form" class="popUp__demo-link">DEMO</a>
-        </div>
+  <div id="header-container"></div>
+  <script type="text/javascript" src="/apps/ajax/links/enMirrorHeader.js"></script>
+  <div id="modal-container"></div>
+  <script type="text/javascript" src="/apps/ajax/links/enMirrorModal.js"></script>
+  <main>
+    <div class='billet-block'></div>
+    <div class='demo-block'>
+      <div class='demo-block_opacity'>
+        <h1 class='demo-block__h1-text'>The clue to the success of your retail</h1>
+        <h2 class='demo-block__h2-text'>First CX solution made by research &amp; consulting company</h2>
+        <span class='demo-block__demo-button d-btn'>DEMO</span>
       </div>
-      <div class='header'>
-        <div class='mirror-logo'>
-          <a class="header__mirror-logo__img" href="index.html">
-            <img src="images/mirror_CX-logo-blue.png" alt="Mirror_CX">
-          </a>
-          <div class='mirror-logo__lang-switch'>
-            <a href='../index.html' class='mirror-logo__lang-switch_rus'>ru</a>
-            <div class='mirror-logo__lang-switch_border'></div>
-            <a href='./index.html' class='mirror-logo__lang-switch_eng active-lang'>en</a>
-          </div>
-        </div>
-        <div class="header__svg">
-          <svg class="menu-open" viewBox="0 0 24 24">
-            <g>
-              <path d="M24,3c0-0.6-0.4-1-1-1H1C0.4,2,0,2.4,0,3v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V3z"></path>
-              <path d="M24,11c0-0.6-0.4-1-1-1H1c-0.6,0-1,0.4-1,1v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V11z"></path>
-              <path d="M24,19c0-0.6-0.4-1-1-1H1c-0.6,0-1,0.4-1,1v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V19z"></path>
-            </g>
-          </svg>
-          <svg class="menu-close" viewBox="0 0 47.971 47.971">
-            <g>
-              <path d="M28.228,23.986L47.092,5.122c1.172-1.171,1.172-3.071,0-4.242c-1.172-1.172-3.07-1.172-4.242,0L23.986,19.744L5.121,0.88   c-1.172-1.172-3.07-1.172-4.242,0c-1.172,1.171-1.172,3.071,0,4.242l18.865,18.864L0.879,42.85c-1.172,1.171-1.172,3.071,0,4.242   C1.465,47.677,2.233,47.97,3,47.97s1.535-0.293,2.121-0.879l18.865-18.864L42.85,47.091c0.586,0.586,1.354,0.879,2.121,0.879   s1.535-0.293,2.121-0.879c1.172-1.171,1.172-3.071,0-4.242L28.228,23.986z"></path>
-            </g>
-          </svg>
-        </div>
-        <ul class='top-menu'>
-          <li class='top-menu__element'>
-            <a href="product/index.html" class='top-menu__link'>SOLUTION</a>
-          </li>
-          <li class='top-menu__element'>
-            <a href="service/mystery/index.html" class='top-menu__link'>SERVICES</a>
-          </li>
-          <li class='top-menu__element'>
-            <a href="clients/index.html" class='top-menu__link'>CLIENTS</a>
-          </li>
-          <li class='top-menu__element'>
-            <a href="franchising/index.html" class='top-menu__link'>FRANCHISING</a>
-          </li>
-          <li class='top-menu__element'>
-            <a href="contacts/index.html" class='top-menu__link'>CONTACTS</a>
-          </li>
-        </ul>
-        <div class='login-form'>
-          <a href='http://online.mirror-russia.ru/login/?next=/' target='_blank' class='login-form__enter-button'>LOGIN</a>
-          <a href='http://online.mirror-russia.ru/purchasers/registration/' target='_blank' class='login-form__registration-button'>BECOME A SHOPPER</a>
-        </div>
-      </div>
-  </header>
-    <main>
-      <div class='billet-block'></div>
-      <div class='demo-block'>
-        <div class='demo-block_opacity'>
-          <h1 class='demo-block__h1-text'>The clue to the success of your retail</h1>
-          <h2 class='demo-block__h2-text'>First CX solution made by research &amp; consulting company</h2>
-          <a href="#form" class='demo-block__demo-button'>DEMO</a>
-          <div class='more-info-wrapper'>
-            <span class='more-info-wrapper__text'>more</span>
-            <img src="images/arrow-down.png" alt="arror-down" class='arrow-down'>
-          </div>
-        </div>
-      </div>
-      <div class='about-block'>
-        <h2 class='about-block__h2-text'>About us</h2>
+    </div>
+    <div class='about-block'>
+      <div class="about-block__align-container">
+        <h2 class='about-block__h2-text'>About Us</h2>
         <p class='about-block__p-text'>Our clients are already more than 100 large Russian and international retail chains. We have always sought to ensure that the research results reflect the real situation in stores, and on the basis of our analytics you could take effective management decisions. For this, a complex model of data collection and processing has been developed, quality standards has been implemented. We bet on technologies and automation.</p>
       </div>
-      <div class='question-block'>
-        <div class='question-block_img'></div>
+    </div>
+    <div class='question-block'>
+      <div class="question-block__align-container">
         <div class='question-block__text-wrapper'>
           <h2 class='question-block__h2-text'>Data is interesting. Conclusions are priceless.</h2>
           <p class='question-block__p-text'>Can you find interrelations of mystery shopping, surveys and financial performance of stores?</p>
@@ -104,56 +37,66 @@
           <p class='question-block__p-text'>Do employees positive perceive requirements, corporate srandarts and checks?</p>
         </div>
       </div>
-      <div class='come-on-demo-block'>
-       <h2 class='come-on-demo-block__h2-text'>It is time to manage the Customer Experience,
-rather than simply control employees.</h2>
-        <a href="#form" class='come-on-demo-block__demo-button'>DEMO</a>
-      </div>
-      <div class='reviews-block'>
-        <div class='reviews-block__reviews-wrapper'>
-          <div class='reviews-block__reviews-post'>
-            <img class='reviews-block__client-logo' src="images/zenden-logo.png" alt="zenden-logo">
-            <p class='reviews-block__client-review'>«One of the main advantages for us is the willingness to embody ideas no one has ever offered».</p>
-<!--            <p class='reviews-block__review-author'>Zenden, Marina Chumak, Head of the corporate university</p>-->
+    </div>
+    <div class="omnicanal-block">
+      <div class="omnicanal-block__align-container">
+        <div class="omnicanal-block__text-container">
+          <h2 class="omnicanal-block__h2-text">Real Omnichannel</h2>
+          <p class="omnicanal-block__p-text">Mirror CX can get data from respondents not only through classical web forms with unique links, but in many other ways. This allows you to conduct surveys just as it is convenient to your customers.</p>
+        </div>
+        <div class="omnicanal-block__icons-container">
+          <div class="omnicanal-block__advantage">
+            <div class="omnicanal-block__img-hold">
+              <img src="images/call.png" alt="call-center">
+            </div>
+            <span class="omnicanal-block__advantage_title">E-mail</span>
           </div>
-          <div class='reviews-block__reviews-post reviews-block__reviews-post_pos-x'>
-            <img class='reviews-block__client-logo' src="images/stoppit-logo.png" alt="stoppit-logo">
-            <p class='reviews-block__client-review'>«Mirror team on time and with proper quality copes with the task, and user-friendly online portal allows to get analysis, and to work with the level of service in our retail network systematically»</p>
-<!--            <p class='reviews-block__review-author'>Stolplit, Andrey Epifantsev, Head of the federal retail chain</p>-->
+          <div class="omnicanal-block__advantage">
+            <div class="omnicanal-block__img-hold">
+              <img src="images/email.png" alt="email">
+            </div>
+            <span class="omnicanal-block__advantage_title">Call-Center</span>
           </div>
-          <div class='reviews-block__reviews-post reviews-block__reviews-post_pos-y'>
-            <img class='reviews-block__client-logo' src="images/bashneft-logo.png" alt="bashneft-logo">
-            <p class='reviews-block__client-review'>«The company immediately showed its flexibility in the approach to our needs and provided a high level of technological support of the project»</p>
-<!--            <p class='reviews-block__review-author'>Bashneft, Andrey Andreyev, director of retail</p>-->
+          <div class="omnicanal-block__advantage">
+            <div class="omnicanal-block__img-hold">
+              <img src="images/pos.png" alt="pos">
+            </div>
+            <span class="omnicanal-block__advantage_title">POS Tablets</span>
           </div>
-          <div class='reviews-block__reviews-post'>
-            <a href="clients/index.html" class='reviews-block__more-info-link'>View all clients ...</a>
+          <div class="omnicanal-block__advantage">
+            <div class="omnicanal-block__img-hold">
+              <img src="images/web.png" alt="web">
+            </div>
+            <span class="omnicanal-block__advantage_title">Website</span>
+          </div>
+          <div class="omnicanal-block__advantage">
+            <div class="omnicanal-block__img-hold">
+              <img src="images/mobile.png" alt="mobile">
+            </div>
+            <span class="omnicanal-block__advantage_title">Mobile App</span>
           </div>
         </div>
       </div>
-      <div class='world-map-block'>
-        <p class='world-map-block__p-text'>We operate in the territory of the CIS, Eastern Europe and the Baltic countries. A unique franchising program is open for Russia and United States. See the special <a href="franchising/index.html" class='world-map-block__link'>partner section</a>, if you are an owner of a regional Mystery shoppers’ agency, an advertising agency or a research company.</p>
-          <img class='world-map-block__map-img' src="images/map.png" alt="whre-we-are-map">
-      </div>
-      <a id='form'></a>
-    </main>
-  </div>
-  <form class='footer-form-block' method="post" action="../apps/mailer/send.php">
-   <div class='footer-form-block__text-wrapper'>
-      <img src="images/form-arrow.png" alt="form-arrow" class='footer-form-block__form-arrow'>
-     <h2 class='footer-form-block__h2-text'>Hello!</h2>
-     <p class='footer-form-block__p-text'>Tell us about your needs and we will answer immediately</p>
-   </div>
-    <div class='footer-form-block__input-wrapper'>
-      <div class='footer-form-block__input-text-wrapper'>
-        <input required name='name' type="text" placeholder='Name' class='footer-form-block__text-input'>
-        <input required name='company-name' type="text" placeholder='Company' class='footer-form-block__text-input footer-form-block__text-input_margin-right'>
-        <input required name='phone' type="tel" placeholder='Phone' class='footer-form-block__text-input footer-form-block__text-input_margin-bottom'>
-        <input required name='email' type="email" placeholder='E-mail' class='footer-form-block__text-input footer-form-block__text-input_margin-bottom footer-form-block__text-input_margin-right'>
-      </div>
-      <textarea required name="comments" id="comments" cols="30" rows="10" placeholder='Comments' class='footer-form-block__comment-input'></textarea>
-      <input type='submit' value='CONTACT ME' class='footer-form-block__submit-button'>
     </div>
-  </form>
+    <div class="CE-block">
+      <h2 class="CE-block__title">It is time to manage the <span class="CE-block__CE">Customer Experience</span>, rather than simply control employees.</h2>
+      <span class="CE-block__button d-btn">DEMO</span>
+    </div>
+    <div class="clients-block">
+      <div class="clients-block__align-container">
+        <div class="client-block__text-container">
+          <p class="clients-block__p-text">«The company immediately showed its flexibility in the approach to our needs and provided a high level of technological support of the project» - Bashneft</p>
+          <p class="clients-block__p-text">«Mirror team on time and with proper quality copes with the task, and user-friendly online portal allows to get analysis, and to work with the level of service in our retail network systematically» - Stolplit</p>
+          <p class="clients-block__p-text">«One of the main advantages for us is the willingness to embody ideas no one has ever offered» - Zenden</p>
+          <a class="clients-block__c-link" href="clients/index.html">View all clients</a>
+        </div>
+        <img src="images/clients.png" alt="clients">
+      </div>
+    </div>
+    <div id="form-container"></div>
+    <script type="text/javascript" src="/apps/ajax/links/enMirrorForm.js"></script>
+  </main>
+  <div id="footer-container"></div>
+  <script type="text/javascript" src="/apps/ajax/links/enMirrorFooter.js"></script>
 </body>
 </html>

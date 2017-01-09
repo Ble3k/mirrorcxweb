@@ -1,20 +1,7 @@
-@import 'styles/reset/reset';
-
-@font-face {
-  font-family: "Lato-Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: url("styles/Fonts/Lato-Regular/Lato-Regular.eot?#iefix") format("embedded-opentype"),
-   url("styles/Fonts/Lato-Regular/Lato-Regular.woff") format("woff"),
-   url("styles/Fonts/Lato-Bold/Lato-Regular.woff2") format("woff2"),  
-   url("styles/Fonts/Lato-Regular/Lato-Regular.ttf") format("truetype"),
-   url('styles/Fonts/Lato-Light/Lato-Regular.svg#Lato-Light') format('svg'); }
-
-@import 'styles/fonts/body-font';
-@import 'styles/Body_Width/body-width';
-@import 'styles/variables/variables';
-@import 'styles/Header_Light/style';
-@import 'styles/Scroll_Container/scroll_container';
+@import 'styles/Reset/index';
+@import 'styles/Globals/index';
+@import 'styles/Variables/index';
+@import 'styles/Header_Light_Style/index';
 
 main {
   display: flex;
@@ -50,57 +37,40 @@ main,
 }
 
 .demo-block__h1-text {
-  font-size: 50px;
+  font-size: 70px;
   color: $global-light-theme-color;
   letter-spacing: .3px;
-  margin-top: 160px;
+  margin-top: 120px;
   font-weight: $global-font-weight;
   text-align: center;
+  max-width: 730px;
 }
 
 .demo-block__h2-text {
   font-size: 30px;
   color: $global-light-theme-color;
-  max-width: $global-textblock-width;
+  max-width: 420px;
   letter-spacing: .3px;
   text-align: center;
-  margin-top: 37px;
-  font-weight: $global-font-weight;
+  margin-top: 30px;
+  opacity: .6;
+  line-height: 1.27;
 }
 
 .demo-block__demo-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 186px;
-  min-height: 40px;
-  max-height: 40px;
-  border-radius: 70px;
+  flex-shrink: 0;
+  width: 94px;
+  height: 48px;
+  border-radius: 4px;
   background-color: #f5a623;
-  font-size: $font-size-big;
-  color: $global-light-theme-color;
-  margin-top: 77px;
-}
-
-.more-info-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 71px;
-  margin-bottom: 27px;
-}
-
-.more-info-wrapper__text {
-  opacity: 0.5;
-  color: $global-light-theme-color;
   font-size: $font-size-bigger;
-}
-
-.arrow-down {
-  display: inline-flex;
-  width: 30px;
-  height: 16px;
-  margin-top: 20px;
+  color: $global-light-theme-color;
+  margin-top: 40px;
+  cursor: pointer;
+  text-align: center;
 }
 
 // <--- Demo-block
@@ -109,27 +79,31 @@ main,
 
 .about-block {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 67px 0 99px 0;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 100px 0;
   border-bottom: $global-blocks-border;
   background: $global-light-theme-color;
 }
 
+.about-block__align-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 980px;
+}
+
 .about-block__h2-text {
-  font-size: 30px;
-  font-weight: $global-font-weight;
-  color: $global-light-theme-text-color;
+  font-size: 40px;
+  font-weight: 600;
+  max-width: 150px;
+  color: #2c3e4f;
 }
 
 .about-block__p-text {
-  @extend .about-block__h2-text;
   font-size: 18px;
-  max-width: $global-textblock-width;
-  text-align: center;
-  margin-top: 50px;
-  line-height: 1.56;
-  font-weight: $global-font-weight;
+  max-width: 680px;
+  line-height: 1.5;
 }
 
 //<--- About-block
@@ -137,40 +111,46 @@ main,
 //Question-block --->
 
 .question-block {
-  min-height: 450px;
   display: flex;
-  line-height: 1.5;
-}
-
-.question-block_img {
+  align-items: flex-start;
+  justify-content: center;
+  padding: 80px 0 70px;
   background-image: url(images/business-fm.jpg);
   background-repeat:  no-repeat;
   background-position:  center center;
   background-size: cover;
   background-color: $global-light-theme-color;
-  flex: 1 1 400px;
+}
+
+.question-block__align-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 980px;
 }
 
 .question-block__text-wrapper {
-  background: $global-dark-theme-color;
-  flex: 1.93 0 300px;
-  padding: 43px 50px;
-  min-height: 410px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 440px;
+  height: 450px;
+  background-color: $global-light-theme-color;
+  padding: 30px;
 }
 
 .question-block__h2-text {
   font-size: 30px;
-  font-weight: $global-font-weight;
-  color: $global-light-theme-color;
-  margin-bottom: 34px;
-  letter-spacing: .3px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #2c3e4f;
+  margin-bottom: 18px;
 }
 
 .question-block__p-text {
-  max-width: 490px;
-  font-size: 18px;
-  color: $global-light-theme-color;
-  margin-bottom: 20px;
+  font-size: 20px;
+  color: #1e1e1e;
+  margin-bottom: 45px;
 }
 
 .question-block__p-text:last-child {
@@ -179,144 +159,147 @@ main,
 
 //<--- Question-block
 
-//Come-on-demo-block --->
+// Omnicanal --->
 
-.come-on-demo-block {
+.omnicanal-block {
+ display: flex;
+ align-items: flex-start;
+ justify-content: center;
+ padding: 80px 0;
+ background-color: $global-light-theme-color;
+}
+
+
+.omnicanal-block__align-container {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 980px;
+}
+
+.omnicanal-block__text-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+.omnicanal-block__h2-text {
+  max-width: 236px;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.15;
+  color: #2c3e4f;
+  margin-right: 64px;
+}
+
+.omnicanal-block__p-text {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #1e1e1e;
+}
+
+.omnicanal-block__icons-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.omnicanal-block__advantage {
+  display: flex;
   align-items: center;
-  height: 290px;
-  border-bottom: $global-blocks-border;
-  background: $global-light-theme-color;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: 130px;
 }
 
-.come-on-demo-block__demo-button {
-  @extend .demo-block__demo-button;
-  margin-top: 40px;
+.omnicanal-block__img-hold {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
 }
 
-.come-on-demo-block__h2-text {
-  max-width: 620px;
-  font-size: 26px;
-  font-weight: $global-font-weight;
-  line-height: 1.38;
+.omnicanal-block__advantage_title {
+  font-size: 20px;
+  font-weight: 600;
   text-align: center;
-  color: $global-light-theme-text-color;
-  letter-spacing: .3px;
-  margin-top: 70px;
+  color: #1e1e1e;
+  margin-top: 27px;
 }
 
-// <--- Come-on-demo-block
+// <--- Omnicanal
 
-//Reviews-block --->
+// CE-block --->
 
-.reviews-block {
-  min-height: 470px;
-  background: $global-light-theme-color;
+.CE-block {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  padding-top: 39px;
+  align-items: center;
+  padding: 80px 0;
+  background-color: #2c3e4f;
 }
 
-.reviews-block__reviews-wrapper {
+.CE-block__title {
+  max-width: 880px;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.25;
+  text-align: center;
+  color: #ffffff;
+}
+
+.CE-block__CE {
+  font-size: 40px;
+  font-weight: 600;
+  color: #ff9b00;
+}
+
+.CE-block__button {
+  @extend .demo-block__demo-button;
+}
+
+// <--- CE-block
+
+// Clients-block --->
+
+.clients-block {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px 0;
+  background-color: #fff;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.clients-block__align-container {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 1150px;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1080px;
 }
 
-.reviews-block__reviews-post {
-  display: flex;
-  flex-direction: column;
-  max-width: 480px;
-  margin: 30px 0 0 84px;
+.clients-block__p-text {
+  max-width: 380px;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 1.5;
+  color: #1e1e1e;
+  margin-bottom: 40px;
 }
 
-.reviews-block__reviews-post_pos-x {
-  position: relative;
-  left: 14px;
-}
-
-.reviews-block__reviews-post_pos-y {
-  position: relative;
-  bottom: 33px;
-}
-
-.reviews-block__client-logo {
-  width: 200px;
-}
-
-.reviews-block__client-review {
-  font-size: $font-size-big;
-  color: $global-light-theme-text-color;
-  font-weight: 400;
-  margin-top: 23px;
-  line-height: 1.65;
-}
-
-.reviews-block__review-author {
-  @extend .reviews-block__client-review;
+.clients-block__c-link {
+  width: 380px;
+  font-size: 20px;
   font-weight: 600;
-  margin-top: 10px;
-  max-width: 355px;
+  color: #ff9b00;
 }
 
-.reviews-block__more-info-link {
-  font-size: 18px;
-  color: #1b92d3;
-  margin-top: 45px;
-  position: relative;
-  left: 16px;
-}
-
-//<--- Reviews-block
-
-//World-map-block --->
-
-.world-map-block {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  min-height: 400px;
-  background: #f2f2f2;
-}
-
-.world-map-block__wrapper-for-text {
-  display: inline-flex;
-  justify-content: flex-end;
-  padding-bottom: 7px;
-}
-
-.world-map-block__wrapper-for-img {
-  display: inline-flex;
-  justify-content: center;
-}
-
-
-.world-map-block__map-img {
-  height: 280px;
-  position: relative;
-  left: 116px;
-}
-
-.world-map-block__p-text {
-  max-width: 440px;
-  line-height: 1.78;
-  color: $global-light-theme-text-color;
-  font-size: 18px;
-  font-weight: $global-font-weight;
-  letter-spacing: .1px;
-}
-
-.world-map-block__link {
-  @extend .reviews-block__more-info-link;
-  margin-top: 0;
-  left: auto;
-}
-
-//<--- World-map-block
-
-@import 'styles/Footer_Form/footer_form';
-@import 'styles/media/media';
+@import 'styles/Footer_Style/index';
+@import 'styles/Modal_Style/index';
+@import 'styles/Form_Style/index';
+@import 'styles/Media/index';

@@ -1,19 +1,7 @@
-@import '../styles/reset/reset';
-
-@font-face {
-  font-family: "Lato-Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../styles/Fonts/Lato-Regular/Lato-Regular.eot?#iefix") format("embedded-opentype"),
-  url("../styles/Fonts/Lato-Regular/Lato-Regular.woff") format("woff"),
-  url("../styles/Fonts/Lato-Regular/Lato-Regular.woff2") format("woff2"),
-  url("../styles/Fonts/Lato-Regular/Lato-Regular.ttf") format("truetype"),
-  url('../styles/Fonts/Lato-Regular/Lato-Regular.svg#Lato-Light') format('svg'); }
-
-@import '../styles/fonts/body-font';
-@import '../styles/Body_Width/body-width';
-@import '../styles/variables/variables';
-@import '../styles/Header_Dark/style';
+@import '../styles/Reset/index';
+@import '../styles/Globals/index';
+@import '../styles/Variables/index';
+@import '../styles/Header_Dark_Style/index';
 @import '../styles/Scroll_Container/scroll_container';
 
 //Global-styles --->
@@ -186,6 +174,6 @@ main,
 
 //<--- Articles-block
 
-@import '../styles/Footer_Form/footer_form';
-@import '../styles/media/media';
+@import '../styles/Form_Style/index';
+@import '../styles/Media/index';
 
